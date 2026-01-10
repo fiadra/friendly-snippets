@@ -1,0 +1,44 @@
+{
+    "Large Summation": {
+        "prefix": ["sumlarge", "\\sumlarge"],
+        "body": ["\\displaystyle\\sum_{$1}^{$2}$3"],
+        "description": "Insert a large summation notation."
+    },
+    "Summation": {
+        "prefix": ["sum", "\\sum"],
+        "body": ["\\sum_{$1}^{$2}$3"],
+        "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
+    },
+    "Large Integral": {
+        "prefix": ["intlarge", "\\intlarge"],
+        "body": ["\\displaystyle\\int_{$1}^{$2}$3"],
+        "description": "Insert large integral notation."
+    },
+    "Inline Integral": {
+        "prefix": ["int", "\\int"],
+        "body": ["\\int_{$1}^{$2}$3"],
+        "description": "Insert inline integral notation, (only in the cases when the environment is inline math environment)."
+    },
+    "Inline Fraction": {
+        "prefix": ["frac", "\\frac"],
+        "body": ["\\frac{$1}{$2}$0"],
+        "description": [
+            "Insert inline fraction notation, (only in the cases when the environment is inline math environment)."
+        ]
+    },
+    "Large Fraction": {
+        "prefix": ["fraclarge", "\\fraclarge"],
+        "body": ["\\displaystyle\\frac{$1}{$2}$0"],
+        "description": ["Insert large fraction notation"]
+    },
+    "Sqrt": {
+        "prefix": "sqrt",
+        "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
+        "description": "sqrt command"
+    },
+    "Nonumber": {
+        "prefix": ";,",
+        "body": "\\nonumber",
+        "description": "nonumber"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "equiv": {
+        "prefix": ";=",
+        "body": "\\equiv",
+        "description": "equiv symbol"
+    },
+    "times": {
+        "prefix": ";*",
+        "body": "\\times",
+        "description": "times symbol"
+    },
+    "leq": {
+        "prefix": ";<",
+        "body": "\\leq",
+        "description": "leq symbol"
+    },
+    "geq": {
+        "prefix": ";>",
+        "body": "\\geq",
+        "description": "geq symbol"
+    },
+    "cdot": {
+        "prefix": ";.",
+        "body": "\\cdot",
+        "description": "\\cdot"
+    },
+    "infinity": {
+        "prefix": ";8",
+        "body": "\\infty",
+        "description": "infinity symbol"
+    },
+    "partial": {
+        "prefix": ";6",
+        "body": "\\partial",
+        "description": "partial derivative symbol"
+    },
+    "bigcup": {
+        "prefix": ";+",
+        "body": "\\bigcup",
+        "description": "bigcup"
+    },
+    "bigcap": {
+        "prefix": ";-",
+        "body": "\\bigcap",
+        "description": "bigcap"
+    },
+    "wedge": {
+        "prefix": ";&",
+        "body": "\\wedge",
+        "description": "wedge"
+    },
+    "Big|": {
+        "prefix": ";|",
+        "body": "\\Big|",
+        "description": "Big |"
+    },
+    "circ": {
+        "prefix": ";;",
+        "body": "\\circ",
+        "description": "circ"
+    },
+    "supcirc": {
+        "prefix": ";0",
+        "body": "^\\circ",
+        "description": "superscript circ"
+    },
+    "dot": {
+        "prefix": ";dot",
+        "body": "\\dot{${1:${TM_SELECTED_TEXT}}}$0",
+        "description": "dot"
+    },
+    "ddot": {
+        "prefix": ";:",
+        "body": "\\ddot{${1:${TM_SELECTED_TEXT}}}$0",
+        "description": "ddot"
+    },
+    "etc": {
+        "prefix": "...",
+        "body": "\\dots",
+        "description": "\\dots"
+    }
+}

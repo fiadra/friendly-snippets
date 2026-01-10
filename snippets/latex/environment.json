@@ -1,0 +1,111 @@
+{
+    "Theorem": {
+        "prefix": ["theorem", "\\theorem"],
+        "body": [
+            "\\begin{theorem}[${1:name of the theorem}]",
+            "\t$0",
+            "\\end{theorem}"
+        ],
+        "description": "Insert a theorem, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Problem": {
+        "prefix": ["problem", "\\problem"],
+        "body": [
+            "\\begin{problem}[${1:name of the problem}]",
+            "\t$0",
+            "\\end{problem}"
+        ],
+        "description": "Insert a problem, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Definition": {
+        "prefix": ["definition", "\\definition"],
+        "body": [
+            "\\begin{definition}[${1:name of the definition}]",
+            "\t$0",
+            "\\end{definition}"
+        ],
+        "description": "Insert a definition, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Proof": {
+        "prefix": ["proof", "\\proof"],
+        "body": [
+            "\\begin{proof}[Proof ${1:Other Information}]",
+            "\t$0",
+            "\\end{proof}"
+        ],
+        "description": "Insert a proof, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Itemize": {
+        "prefix": ["- ", "\\itemize", "itemize"],
+        "body": ["\\begin{itemize}", "\t\\item $1", "\\end{itemize}$0"]
+    },
+    "Item": {
+        "prefix": "item",
+        "body": "\n\\item ",
+        "description": "\\item on a newline"
+    },
+    "enumerate": {
+        "prefix": "BEN",
+        "body": "\\begin{enumerate}\n\t\\item ${0:${TM_SELECTED_TEXT}}\n\\end{enumerate}",
+        "description": "enumerate environment"
+    },
+    "Description": {
+        "prefix": "desc",
+        "body": [
+            "\\\\begin{description}",
+            "\t\\item[$1] $0",
+            "\\\\end{description}"
+        ],
+        "description": "Description"
+    },
+    "Indent": {
+        "prefix": ["tab", "\\tab"],
+        "body": ["\\indent "],
+        "description": "The equivalent of \"\\t\", also known as \"Tab\""
+    },
+    "Algorithm": {
+        "prefix": "algo",
+        "body": [
+            "% \\usepackage{algorithm,algorithmicx,algpseudocode}",
+            "\\begin{algorithm}",
+            "\t\\floatname{algorithm}{${1:Algorithm}}",
+            "\t\\algrenewcommand\\algorithmicrequire{\\textbf{${2:Input: }}}",
+            "\t\\algrenewcommand\\algorithmicensure{\\textbf{${3:Output: }}}",
+            "\t\\caption{$4}\\label{alg:$5}",
+            "\t\\begin{algorithmic}[1]",
+            "\t\t\\Require \\$input\\$",
+            "\t\t\\Ensure \\$output\\$",
+            "\t\t$6",
+            "\t\t\\State \\textbf{return} \\$state\\$",
+            "\t\\end{algorithmic}",
+            "\\end{algorithm}",
+            "$0"
+        ],
+        "description": "Add an algorithm"
+    },
+    "Algorithm:State": {
+        "prefix": "state",
+        "body": ["\\State $1"],
+        "desciption": "Add an statement of algorithm"
+    },
+    "Algorithm:If": {
+        "prefix": "if",
+        "body": ["\\If{$1}", "\\ElsIf{$2}", "\\Else", "\\EndIf"],
+        "desciption": "Add an if statement of algorithm"
+    },
+    "Algorithm:For": {
+        "prefix": "for",
+        "body": ["\\For{i=0:$1}", "\t\\State $0", "\\EndFor"],
+        "desciption": "Add an for statement of algorithm"
+    },
+    "Algorithm:While": {
+        "prefix": "while",
+        "body": ["\\While{$1}", "\t\\State $0", "\\EndWhile"],
+        "desciption": "Add an for statement of algorithm"
+    },
+    "Algorithm:Ref": {
+        "prefix": "algo:ref",
+        "body": ["${1:Algorithm}~\\ref{algo:$2}$0"],
+        "desciption": "Ref for Algorithm"
+    }
+}
