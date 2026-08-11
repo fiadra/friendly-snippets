@@ -288,6 +288,22 @@
     ],
     "description": "Insert a proof, whose style is already defined in the template. The serial number is automatically generated according to the section."
   },
+  "Label": {
+    "prefix": [
+      "label",
+      "\\label"
+    ],
+    "body": "\\label{$1}$0",
+    "description": "label"
+  },
+  "Ref": {
+    "prefix": [
+      "ref",
+      "\\ref"
+    ],
+    "body": "\\ref{$1}$0",
+    "description": "ref"
+  },
   "Enumerate": {
     "prefix": "enumerate",
     "body": "\\begin{enumerate}\n  \\item ${0:${TM_SELECTED_TEXT}}\n\\end{enumerate}",
